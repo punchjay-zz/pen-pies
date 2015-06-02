@@ -52,7 +52,7 @@ header nav button {
   width: 33.33%;
   padding: 0;
   margin: 0;
-  color: #aa7c52;
+  color: #88554b;
   font-size: 20px;
   font-family: "Avenir Next", "nunitolight";
   -webkit-font-smoothing: antialiased;
@@ -65,7 +65,7 @@ header nav button {
   box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
 }
 header nav button:hover {
-  background: #aa7c52;
+  background: #4b1712;
   color: #ffffff;
 }
 header nav button.selected {
@@ -109,12 +109,16 @@ article.section03 {
   background: url('../media/brick-bg02.png');
   background-size: contain;
 }
+footer {
+  height: 50px;
+  background: #000;
+}
 footer p {
   text-align: center;
-  background: #ffffff;
-  color: #2d2e34;
+  color: #ffffff;
   font-size: 14px;
-  margin: 15px auto 15px auto;
+  margin: 0 auto 0 auto;
+  padding: 0;
 }
 h1,
 h2,

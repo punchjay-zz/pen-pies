@@ -9,15 +9,12 @@
 @import "reset.css";
 @dark-gray: #2d2e34;
 @light-gray: #bec4cc;
-@blue: #00B294;
+@brick-red-light: #88554b;
+@brick-red-dark: #4b1712;
+@logo-brown: #aa7c52;
 @off-white: #f2f3f6;
-@blue-med: #20bbfc;
 @white: #fff;
 @black: #000;
-@purple-rain: #672079;
-@light-purple: #d1bcd7;
-@orange: #ff8c00;
-@dark-orange: #dc3c00;
 @slide-left: l-slide 0.5s both ease-out;
 @slide-right: r-slide 0.5s both ease-out;
 @slide-bottom: b-slide 0.5s both ease-out;
@@ -40,7 +37,7 @@ body {
 
 ::selection {
     color: @white;
-    background-color: @orange;
+    background-color: @brick-red-dark;
 }
 
 header {
@@ -71,7 +68,7 @@ header {
             width: 33.33%;
             padding: 0;
             margin: 0;
-            color: #aa7c52;
+            color: @brick-red-light;
             font-size: 20px;
             font-family: "Avenir Next", "nunitolight";
             -webkit-font-smoothing: antialiased;
@@ -83,7 +80,7 @@ header {
             -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
             box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
             &:hover {
-                background: #aa7c52;
+                background: @brick-red-dark;
                 color: @white;
             }
             &.selected {
@@ -133,19 +130,23 @@ article {
     }
 }
 
-footer p {
-    text-align: center;
-    background: @white;
-    color: @dark-gray;
-    font-size: 14px;
-    margin: 15px auto 15px auto;
+footer {
+    height: 50px;
+    background: @black;
+    p {
+        text-align: center;
+        color: @white;
+        font-size: 14px;
+        margin: 0 auto 0 auto;
+        padding: 0;
+    }
 }
 
 h1,
 h2,
 h3,
 h4 {
-    color: #aa7c52;
+    color: @logo-brown;
     margin: 0 auto;
     padding: 0 0 30px 0;
 }
