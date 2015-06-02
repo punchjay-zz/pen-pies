@@ -98,8 +98,7 @@ header {
 }
 
 article {
-    background: @white;
-    color: @dark-gray;
+    color: @white;
     text-align: center;
     padding: 120px 0 250px;
     overflow: hidden;
@@ -111,16 +110,26 @@ article {
     }
     &.section01 {
         height: 400px;
+        background: url('../media/brick-bg.jpg');
+        background-size: contain;
     }
     &.section02 {
         height: 350px;
+        background: url('../media/brick-bg01.jpg');
+        background-size: contain;
         img {
             display: inline-block;
             padding: 10px 10px 0 10px;
         }
+        p,
+        h1 {
+            color: @white;
+        }
     }
     &.section03 {
         height: 350px;
+        height: 350px;
+        background: url('../media/brick-bg03.jpg');
     }
 }
 

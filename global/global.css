@@ -75,8 +75,7 @@ header nav button.selected {
   outline: 0;
 }
 article {
-  background: #ffffff;
-  color: #2d2e34;
+  color: #ffffff;
   text-align: center;
   padding: 120px 0 250px;
   overflow: hidden;
@@ -89,16 +88,25 @@ article .container {
 }
 article.section01 {
   height: 400px;
+  background: url('../media/brick-bg.jpg');
+  background-size: contain;
 }
 article.section02 {
   height: 350px;
+  background: url('../media/brick-bg01.jpg');
+  background-size: contain;
 }
 article.section02 img {
   display: inline-block;
   padding: 10px 10px 0 10px;
 }
+article.section02 p,
+article.section02 h1 {
+  color: #ffffff;
+}
 article.section03 {
   height: 350px;
+  background: url('../media/brick-bg03.jpg');
 }
 footer p {
   text-align: center;
