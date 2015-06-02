@@ -49,14 +49,4 @@ $(document).ready(function () {
             .find('img').addClass('fade-in');
     });
 
-    /*    $(window).scroll(function () {
-            var hT = $('#bt-two-anchor').offset().top,
-                hH = $('#bt-two-anchor').outerHeight(),
-                wH = $(window).height(),
-                wS = $(this).scrollTop();
-            console.log((hT - wH), wS);
-            if (wS > (hT + hH - wH)) {
-                $('#bt-two-anchor').find('h1').addClass('slide-in-left');
-            }
-        });*/
 });
