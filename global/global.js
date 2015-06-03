@@ -48,5 +48,4 @@ $(document).ready(function () {
             .find('p').addClass('slide-in-right').end()
             .find('img').addClass('fade-in');
     });
-
 });
