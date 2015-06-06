@@ -104,6 +104,9 @@ article.section02 img {
 article.section02 p {
   color: #2d2e34;
 }
+article.section02 a {
+  color: #4b1712;
+}
 article.section03 {
   height: 350px;
   background: url('../media/brick-bg02.jpg');
