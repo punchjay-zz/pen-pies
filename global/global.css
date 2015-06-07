@@ -378,3 +378,8 @@ a {
     display: none;
   }
 }
+.fb-page {
+  padding: 50px 0;
+  z-index: 999;
+  overflow: scroll;
+}
