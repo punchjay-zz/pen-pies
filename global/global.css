@@ -379,7 +379,6 @@ a {
   }
 }
 .fb-page {
-  padding: 50px 0;
-  z-index: 999;
-  overflow: scroll;
+  margin: 50px 0 0 0;
+  border: solid #ffffff 2px;
 }
