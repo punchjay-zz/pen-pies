@@ -198,6 +198,10 @@ footer {
     }
 }
 
+.fb-page {
+    margin: 50px 0 0 0;
+}
+
 .slide-in-left {
     -moz-animation: @fade-in-l-slide;
     -o-animation: @fade-in-l-slide;
@@ -417,7 +421,7 @@ footer {
     }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     html {
         font-size: 97%;
         -webkit-text-size-adjust: none;
@@ -442,8 +446,4 @@ footer {
             }
         }
     }
-}
-
-.fb-page {
-    margin: 50px 0 0 0;
 }
