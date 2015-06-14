@@ -16,7 +16,7 @@ body {
   white-space: nowrap;
   font-family: "Avenir Next", "nunitolight";
   -webkit-font-smoothing: antialiased;
-  font-size: 100%;
+  font-size: 1rem;
 }
 ::selection {
   color: #ffffff;
@@ -53,7 +53,7 @@ header nav button {
   padding: 0;
   margin: 0;
   color: #88554b;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-family: "Avenir Next", "nunitolight";
   -webkit-font-smoothing: antialiased;
   -moz-animation: b-slide 0.5s both ease-out;
@@ -78,22 +78,21 @@ header nav button.selected {
 article {
   color: #ffffff;
   text-align: center;
-  padding: 120px 0 250px;
+  padding: 120px 0 120px;
   overflow: hidden;
   position: relative;
   white-space: normal;
   z-index: 100;
+  height: auto;
 }
 article .container {
   padding: 0 40px 0 40px;
 }
 article.section01 {
-  height: 440px;
   background: url('../media/brick-bg01.jpg');
   background-size: contain;
 }
 article.section02 {
-  height: 590px;
   background: url('../media/brick-bg03.png');
   background-size: contain;
 }
@@ -108,20 +107,8 @@ article.section02 a {
   color: #4b1712;
 }
 article.section03 {
-  height: 350px;
   background: url('../media/brick-bg02.jpg');
   background-size: contain;
-}
-footer {
-  height: 50px;
-  background: #000000;
-}
-footer p {
-  text-align: center;
-  color: #ffffff;
-  font-size: 14px;
-  margin: 0 auto 0 auto;
-  padding: 0;
 }
 h1,
 h2,
@@ -132,27 +119,26 @@ h4 {
   padding: 0 0 30px 0;
 }
 h1 {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.22rem;
+  line-height: 2.22rem;
   margin-top: 0;
   font-weight: 400;
-  padding-top: 35px;
 }
 h2 {
-  font-size: 38px;
-  line-height: 38px;
+  font-size: 2.1rem;
+  line-height: 2.1rem;
 }
 h3 {
-  font-size: 29px;
-  line-height: 40px;
+  font-size: 1.55rem;
+  line-height: 1.66rem;
 }
 h4 {
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
 }
 p {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.11rem;
+  line-height: 1.667rem;
   margin: 0 auto;
   max-width: 670px;
   text-align: center;
@@ -168,6 +154,17 @@ h4 span {
 a {
   color: #ffffff;
   text-decoration: underline;
+}
+footer {
+  height: 50px;
+  background: #000000;
+}
+footer p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.7778rem;
+  margin: 0 auto 0 auto;
+  padding: 0;
 }
 .slide-in-left {
   -moz-animation: fade-in-l-slide 0.5s both ease-out;
@@ -371,14 +368,26 @@ a {
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  body {
-    font-size: 200%;
+  html {
+    font-size: 97%;
+    -webkit-text-size-adjust: none;
   }
-  header {
+  html body header {
     display: none;
+  }
+  html body article {
+    padding: 80px 0 40px 0;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  html {
+    font-size: 90%;
+    -webkit-text-size-adjust: none;
+  }
+  html body article {
+    padding: 90px 0 50px 0;
   }
 }
 .fb-page {
   margin: 50px 0 0 0;
-  border: solid #ffffff 2px;
 }
