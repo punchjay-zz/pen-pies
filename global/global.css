@@ -96,10 +96,6 @@ article.section02 {
   background: url('../media/brick-bg03.png');
   background-size: contain;
 }
-article.section02 img {
-  display: inline-block;
-  padding: 10px 10px 0 10px;
-}
 article.section02 p {
   color: #2d2e34;
 }
@@ -109,6 +105,13 @@ article.section02 a {
 article.section03 {
   background: url('../media/brick-bg02.jpg');
   background-size: contain;
+}
+article.section03 a {
+  text-decoration: none;
+}
+article.section03 img {
+  display: inline-block;
+  padding: 60px 10px 0 10px;
 }
 h1,
 h2,
