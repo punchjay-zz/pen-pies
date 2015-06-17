@@ -8,8 +8,7 @@
   font-style: normal;
 }
 html {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
   height: 100%;
   background: #ffffff;
 }
@@ -380,7 +379,7 @@ footer p {
     -webkit-text-size-adjust: none;
   }
   html body {
-    overflow-y: scroll;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     height: 100%;
   }

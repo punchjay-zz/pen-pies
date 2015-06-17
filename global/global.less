@@ -29,8 +29,7 @@
 @iphone6-portrait: ~"only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)";
 @iphone6-landscape: ~"only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)";
 html {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
     height: 100%;
     background: @white;
 }
@@ -438,7 +437,7 @@ footer {
         font-size: 97% !important;
         -webkit-text-size-adjust: none;
         body {
-            overflow-y: scroll;
+            overflow-y: auto;
             -webkit-overflow-scrolling: touch;
             height: 100%;
             header {
