@@ -169,6 +169,9 @@ footer p {
   margin: 0 auto 0 auto;
   padding: 0;
 }
+footer p a {
+  text-decoration: none;
+}
 .fb-page {
   margin: 50px 0 0 0;
 }
