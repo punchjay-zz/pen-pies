@@ -58,6 +58,8 @@ $(document).ready(function () {
         $(btAnchor).find('h1').addClass('slide-in-left').end()
             .find('p').addClass('slide-in-right').end()
             .find('img').addClass('fade-in');
+
+        return false;
     });
 
     //google analytics
