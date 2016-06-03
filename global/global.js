@@ -1,6 +1,8 @@
 /// <reference path="jquery-2.1.3.js" />
 $(document).ready(function () {
 
+    'use strict';
+    
     // MIT license - requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
     (function () {
         var lastTime = 0;
