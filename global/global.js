@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     'use strict';
-    
+
     // MIT license - requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
     (function () {
         var lastTime = 0;
@@ -16,8 +16,8 @@ $(document).ready(function () {
                 var currTime = new Date().getTime();
                 var timeToCall = Math.max(0, 16 - (currTime - lastTime));
                 var id = window.setTimeout(function () {
-                        callback(currTime + timeToCall);
-                    },
+                    callback(currTime + timeToCall);
+                },
                     timeToCall);
                 lastTime = currTime + timeToCall;
                 return id;
@@ -28,16 +28,6 @@ $(document).ready(function () {
             };
     }());
     //end polyfill
-
-    //facebook feed
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
 
     //navigation and scrolling
     var $navBt = $('.nav-bt');
@@ -52,8 +42,8 @@ $(document).ready(function () {
 
         requestAnimationFrame(function () {
             $('html, body').animate({
-                    scrollTop: $(btAnchor).offset().top
-                },
+                scrollTop: $(btAnchor).offset().top
+            },
                 800);
         });
 
@@ -63,6 +53,10 @@ $(document).ready(function () {
 
         return false;
     });
+
+    var currentDate = new Date();
+    var yearDate = currentDate.getFullYear();
+    document.getElementById('year-date').innerHTML = yearDate;
 
     //google analytics
     (function (i, s, o, g, r, a, m) {

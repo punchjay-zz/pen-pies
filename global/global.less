@@ -28,6 +28,7 @@
 @iphone5-landscape: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)";
 @iphone6-portrait: ~"only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)";
 @iphone6-landscape: ~"only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)";
+
 html {
     overflow-y: auto;
     height: 100%;
@@ -57,9 +58,11 @@ header {
     overflow: hidden;
     height: 70px;
     opacity: 0.96;
+
     nav {
         white-space: nowrap;
         font-size: 0;
+
         button {
             display: inline-block;
             vertical-align: top;
@@ -85,10 +88,12 @@ header {
             -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
             -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
             box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
+
             &:hover {
                 background: @brick-red-dark;
                 color: @white;
             }
+
             &.selected {
                 background: @white;
                 color: @dark-gray;
@@ -110,29 +115,37 @@ article {
     white-space: normal;
     z-index: 100;
     height: auto;
+
     .container {
         padding: 0 40px 0 40px;
     }
+
     &.section01 {
         background: url('../media/brick-bg01.jpg');
         background-size: contain;
     }
+
     &.section02 {
         background: url('../media/brick-bg03.png');
         background-size: contain;
+
         p {
             color: @dark-gray;
         }
+
         a {
             color: @brick-red-dark;
         }
     }
+
     &.section03 {
         background: url('../media/brick-bg02.jpg');
         background-size: contain;
+
         a {
             text-decoration: none;
         }
+
         img {
             display: inline-block;
             padding: 60px 10px 0 10px;
@@ -177,7 +190,7 @@ p {
     margin: 0 auto;
     max-width: 670px;
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 p,
@@ -198,20 +211,22 @@ a {
 footer {
     height: 50px;
     background: @black;
+
     p {
         text-align: center;
         color: @white;
         font-size: 0.7778rem;
         margin: 0 auto 0 auto;
         padding: 0;
+
         a {
             text-decoration: none;
         }
     }
 }
 
-.fb-page {
-    margin: 50px 0 0 0;
+.map {
+    text-decoration: underline !important;
 }
 
 .slide-in-left {
@@ -251,6 +266,7 @@ footer {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -260,6 +276,7 @@ footer {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -269,6 +286,7 @@ footer {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -278,6 +296,7 @@ footer {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -287,6 +306,7 @@ footer {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -296,6 +316,7 @@ footer {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -310,6 +331,7 @@ footer {
         transform: translateY(40px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -325,6 +347,7 @@ footer {
         -moz-transform: translateY(40px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateY(0);
         opacity: 1;
@@ -336,6 +359,7 @@ footer {
         -webkit-transform: translateY(40px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateY(0);
         opacity: 1;
@@ -351,6 +375,7 @@ footer {
         transform: translateX(-500px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
@@ -366,6 +391,7 @@ footer {
         -moz-transform: translateX(-500px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateX(0);
         opacity: 1;
@@ -377,6 +403,7 @@ footer {
         -webkit-transform: translateX(-500px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateX(0);
         opacity: 1;
@@ -392,6 +419,7 @@ footer {
         transform: translateX(100px);
         opacity: 0;
     }
+
     50% {
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
@@ -400,6 +428,7 @@ footer {
         transform: translateX(0);
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }
@@ -410,10 +439,12 @@ footer {
         -moz-transform: translateX(1000px);
         opacity: 0;
     }
+
     50% {
         -moz-transform: translateX(0);
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }
@@ -424,28 +455,31 @@ footer {
         -webkit-transform: translateX(1000px);
         opacity: 0;
     }
+
     50% {
         -webkit-transform: translateX(0);
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }
 }
 
-@media @iphone6-portrait,
-@iphone5-portrait,
-@iphone4-portrait {
+@media @iphone6-portrait, @iphone5-portrait, @iphone4-portrait {
     html {
         font-size: 97%;
         -webkit-text-size-adjust: none;
+
         body {
             overflow-y: auto;
             -webkit-overflow-scrolling: touch;
             height: 100%;
+
             header {
                 display: none;
             }
+
             article {
                 padding: 40px 0 40px 0;
             }
@@ -453,12 +487,11 @@ footer {
     }
 }
 
-@media @iphone6-landscape,
-@iphone5-landscape,
-@iphone4-landscape {
+@media @iphone6-landscape, @iphone5-landscape, @iphone4-landscape {
     html {
         font-size: 90%;
         -webkit-text-size-adjust: none;
+
         body {
             article {
                 padding: 90px 0 50px 0;
